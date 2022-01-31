@@ -1,0 +1,120 @@
+.container {
+  width: 950px;
+  margin: 0 50px 0 0;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: $hd) {
+    margin: 20px 20px 0;
+  }
+
+  @media (max-width: 1500px) {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  @media (max-width: $mobile) {
+    width: 80%;
+    margin: 0 auto 0;
+  }
+}
+
+.btn_check {
+  border-radius: 2px;
+  padding: 0 10px;
+  transition: background 0.4s;
+
+  &:hover {
+    background: $helper;
+  }
+
+  &--active {
+    background: $contrast;
+
+    &:hover {
+      background: $contrast;
+    }
+  }
+}
+
+.like_btn {
+  &--active {
+    color: $contrast;
+  }
+}
+
+.btn_container {
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+}
+
+.btn {
+  &--more {
+    color: $contrast;
+  }
+
+  &--primery {
+    background: $contrast;
+    padding: 10px 15px;
+    border-radius: 3px;
+    width: 125px;
+    height: 45px;
+  }
+}
+
+section {
+  margin: 30px auto 75px;
+
+  @media (max-width: $mobile) {
+    margin: 30px auto;
+  }
+}
+
+.section_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 20px 0;
+
+  p {
+    font-weight: bold;
+    font-size: 22px;
+  }
+}
+
+.hover_heart {
+  transition: all 0.4s;
+
+  &:hover {
+    -webkit-animation: tada 1.5s ease infinite;
+    animation: tada 1.5s ease infinite;
+    color: $helper;
+  }
+}
+
+.input {
+  &--normal {
+    width: 100%;
+    max-width: 550px;
+
+    background: $lighten;
+    border-radius: 5px;
+    color: $white;
+    padding: 10px;
+    margin: 10px 0;
+  }
+}
+
+.center {
+  text-align: center;
+}

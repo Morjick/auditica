@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+  <!-- local styles -->
+  <link rel="stylesheet" href="/styles/main.css">
+
+  <!-- icons styles -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Auditica</title>
+</head>
+
+<body>
+
+  <div class="screen">
+
+    <!-- ! sidebar -->
+    <aside>
+      <div class="sidebar">
+        <div class="sidebar_header">
+          <div class="logo_header">
+            <img src="./assets/logo.png" alt="AA" class="logo_item">
+            <p>auditica</p>
+          </div>
+        </div>
+
+        <div class="sidebar_user">
+          <div class="sidebar_user_avatar">
+            <img src="/assets/avatar.jpg" alt="">
+          </div>
+          <div class="sidebar_user_desc">Matvey</div>
+          <a href="/login.html"><i class='bx bx-log-out'></i></a>
+        </div>
+
+        <div class="sidebar_nav">
+          <ul class="menu">
+            <li class="menu_item menu_item--avtive">
+              <a href="/" class="menu_item_href">
+                <i class='bx bxs-home'></i>
+                <p>Home</p>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a href="/chat" class="menu_item_href">
+                <i class='bx bx-message-rounded'></i>
+                <p>Chat</p>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a href="/favorite" class="menu_item_href">
+                <i class='bx bx-heart'></i>
+                <p>Favorite</p>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a href="/library" class="menu_item_href">
+                <i class='bx bx-support'></i>
+                <p>My musik</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </aside>
+
+    <!-- ! main -->
+
+    <main class="main main--content">
+
+      <div class="container">
+
+        <div class="main_screen">
+          <h2>Most popular track of the week</h2>
+
+          <div class="main_screen_desc">
+            <div class="main_screen_desc_group">Post Malone</div>
+            <div class="main_screen_desc_name">Circles</div>
+
+            <div class="btn_container">
+
+              <button class="btn btn--fool">
+                <i class='bx bx-list-plus'></i>
+              </button>
+
+              <button class="btn btn--fool">
+                <i class='bx bxs-heart hover_heart'></i>
+              </button>
+
+              <button id="play" class="btn btn--primery">Play</button>
+            </div>
+
+          </div>
+
+          <div class="shadow"></div>
+          <img class="main_screen_img" src="/assets/banner.png" alt="">
+        </div>
+
+        <!-- ! New Releases -->
+
+        <section>
+          <div class="section_header">
+            <p>New Releases</p>
+            <button class="btn--more">See more</button>
+          </div>
+
+          <div class="releases">
+            <div class="releases_inner">
+
+              <div class="releases_item">
+                <div class="releases_item_preview">
+                  <img src="/assets/releases/red.png" alt="">
+                </div>
+                <div class="releases_item_albom">Taylor Swift</div>
+                <div class="releases_item_group">Red (Taylor Version)</div>
+              </div>
+
+              <div class="releases_item">
+                <div class="releases_item_preview">
+                  <img src="/assets/releases/need.png" alt="">
+                </div>
+                <div class="releases_item_albom">Need To Know</div>
+                <div class="releases_item_group">Doja Cat</div>
+              </div>
+
+              <div class="releases_item">
+                <div class="releases_item_preview">
+                  <img src="/assets/releases/after.png" alt="">
+                </div>
+                <div class="releases_item_albom">After Hours</div>
+                <div class="releases_item_group">The Weeknd </div>
+              </div>
+
+              <div class="releases_item">
+                <div class="releases_item_preview">
+                  <img src="/assets/releases/hit.png" alt="">
+                </div>
+                <div class="releases_item_albom">HIT MACHINE</div>
+                <div class="releases_item_group">Soundwave</div>
+              </div>
+
+              <div class="releases_item">
+                <div class="releases_item_preview">
+                  <img src="/assets/releases/red.png" alt="">
+                </div>
+                <div class="releases_item_albom">Taylor Swift</div>
+                <div class="releases_item_group">Red (Taylor Version)</div>
+              </div>
+
+              <div class="releases_item">
+                <div class="releases_item_preview">
+                  <img src="/assets/releases/need.png" alt="">
+                </div>
+                <div class="releases_item_albom">Need To Know</div>
+                <div class="releases_item_group">Doja Cat</div>
+              </div>
+
+              <div class="releases_item">
+                <div class="releases_item_preview">
+                  <img src="/assets/releases/after.png" alt="">
+                </div>
+                <div class="releases_item_albom">After Hours</div>
+                <div class="releases_item_group">The Weeknd </div>
+              </div>
+
+              <div class="releases_item">
+                <div class="releases_item_preview">
+                  <img src="/assets/releases/hit.png" alt="">
+                </div>
+                <div class="releases_item_albom">HIT MACHINE</div>
+                <div class="releases_item_group">Soundwave</div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- ! New Releases end -->
+
+        <!-- ! You May Like -->
+        <section>
+          <div class="section_header">
+            <p>You May</p>
+            <button class="btn--more">See more</button>
+          </div>
+          <div class="stories_block">
+            <div class="stories_block_inner">
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/1.jpg" alt="">
+                </div>
+                <div class="stories_title">Rockabye</div>
+                <div class="stories_username">The Clean Bandit</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Chester_Linkin_Park.jpg/200px-Chester_Linkin_Park.jpg"
+                    alt="">
+                </div>
+                <div class="stories_title">Hello!</div>
+                <div class="stories_username">Chester Benington</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/3.jpg" alt="">
+                </div>
+                <div class="stories_title">Stay</div>
+                <div class="stories_username">Zedd</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/4.jpg" alt="">
+                </div>
+                <div class="stories_title">Bad Habits</div>
+                <div class="stories_username">Ed Sheeran</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/1.jpg" alt="">
+                </div>
+                <div class="stories_title">Rockabye</div>
+                <div class="stories_username">The Clean Bandit</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Chester_Linkin_Park.jpg/200px-Chester_Linkin_Park.jpg"
+                    alt="">
+                </div>
+                <div class="stories_title">Hello!</div>
+                <div class="stories_username">Chester Benington</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/3.jpg" alt="">
+                </div>
+                <div class="stories_title">Stay</div>
+                <div class="stories_username">Zedd</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/4.jpg" alt="">
+                </div>
+                <div class="stories_title">Bad Habits</div>
+                <div class="stories_username">Ed Sheeran</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/1.jpg" alt="">
+                </div>
+                <div class="stories_title">Rockabye</div>
+                <div class="stories_username">The Clean Bandit</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Chester_Linkin_Park.jpg/200px-Chester_Linkin_Park.jpg"
+                    alt="">
+                </div>
+                <div class="stories_title">Hello!</div>
+                <div class="stories_username">Chester Benington</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/3.jpg" alt="">
+                </div>
+                <div class="stories_title">Stay</div>
+                <div class="stories_username">Zedd</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/4.jpg" alt="">
+                </div>
+                <div class="stories_title">Bad Habits</div>
+                <div class="stories_username">Ed Sheeran</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/1.jpg" alt="">
+                </div>
+                <div class="stories_title">Rockabye</div>
+                <div class="stories_username">The Clean Bandit</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Chester_Linkin_Park.jpg/200px-Chester_Linkin_Park.jpg"
+                    alt="">
+                </div>
+                <div class="stories_title">Hello!</div>
+                <div class="stories_username">Chester Benington</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/3.jpg" alt="">
+                </div>
+                <div class="stories_title">Stay</div>
+                <div class="stories_username">Zedd</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/4.jpg" alt="">
+                </div>
+                <div class="stories_title">Bad Habits</div>
+                <div class="stories_username">Ed Sheeran</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/1.jpg" alt="">
+                </div>
+                <div class="stories_title">Rockabye</div>
+                <div class="stories_username">The Clean Bandit</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Chester_Linkin_Park.jpg/200px-Chester_Linkin_Park.jpg"
+                    alt="">
+                </div>
+                <div class="stories_title">Hello!</div>
+                <div class="stories_username">Chester Benington</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/3.jpg" alt="">
+                </div>
+                <div class="stories_title">Stay</div>
+                <div class="stories_username">Zedd</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/4.jpg" alt="">
+                </div>
+                <div class="stories_title">Bad Habits</div>
+                <div class="stories_username">Ed Sheeran</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/1.jpg" alt="">
+                </div>
+                <div class="stories_title">Rockabye</div>
+                <div class="stories_username">The Clean Bandit</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Chester_Linkin_Park.jpg/200px-Chester_Linkin_Park.jpg"
+                    alt="">
+                </div>
+                <div class="stories_title">Hello!</div>
+                <div class="stories_username">Chester Benington</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/3.jpg" alt="">
+                </div>
+                <div class="stories_title">Stay</div>
+                <div class="stories_username">Zedd</div>
+              </div>
+
+              <div class="stories">
+                <div class="stories_avatar">
+                  <img src="/assets/singers/4.jpg" alt="">
+                </div>
+                <div class="stories_title">Bad Habits</div>
+                <div class="stories_username">Ed Sheeran</div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- ! You May Like end -->
+
+        <!-- ! Recently Played -->
+        <section>
+          <div class="section_header">
+            <p>Recently Played</p>
+          </div>
+          <div class="played">
+            <div class="played_inner">
+
+              <div class="song">
+                <span>1</span>
+                <div class="song_avatar">
+                  <img src="/assets/top/lp.jpg" alt="">
+                  <div class="song_avatar_mask">
+                    <button><i class='bx bx-play'></i></button>
+                  </div>
+                </div>
+                <div class="song_body">
+                  <div class="song_body_name">Given Up</div>
+                  <div class="song_body_autor">Linkin Park</div>
+                  <div class="song_body_time">4:07</div>
+                  <div class="song_body_btns">
+                    <button><i class='bx bx-heart bxs-heart like_btn--active'></i></button>
+                    <button><i class='bx bx-list-ul'></i></button>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="song">
+                <span>2</span>
+                <div class="song_avatar">
+                  <img src="/assets/singers/1.jpg" alt="">
+                  <div class="song_avatar_mask">
+                    <button><i class='bx bx-play'></i></button>
+                  </div>
+                </div>
+                <div class="song_body">
+                  <div class="song_body_name">All I Want For Christmas Is You</div>
+                  <div class="song_body_autor"> Maria Carey </div>
+                  <div class="song_body_time">3:54</div>
+                  <div class="song_body_btns">
+                    <button><i class='bx bx-heart'></i></button>
+                    <button><i class='bx bx-list-ul'></i></button>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="song">
+                <span>3</span>
+                <div class="song_avatar">
+                  <img src="/assets/singers/3.jpg" alt="">
+                  <div class="song_avatar_mask">
+                    <button><i class='bx bx-play'></i></button>
+                  </div>
+                </div>
+                <div class="song_body">
+                  <div class="song_body_name">Donda</div>
+                  <div class="song_body_autor">Kanye West</div>
+                  <div class="song_body_time">3:54</div>
+                  <div class="song_body_btns">
+                    <button><i class='bx bx-heart'></i></button>
+                    <button><i class='bx bx-list-ul'></i></button>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="song">
+                <span>4</span>
+                <div class="song_avatar">
+                  <img src="/assets/top/lp.jpg" alt="">
+                  <div class="song_avatar_mask">
+                    <button><i class='bx bx-play'></i></button>
+                  </div>
+                </div>
+                <div class="song_body">
+                  <div class="song_body_name">Given Up</div>
+                  <div class="song_body_autor">Linkin Park</div>
+                  <div class="song_body_time">4:07</div>
+                  <div class="song_body_btns">
+                    <button><i class='bx bx-heart bxs-heart like_btn--active'></i></button>
+                    <button><i class='bx bx-list-ul'></i></button>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="song">
+                <span>5</span>
+                <div class="song_avatar">
+                  <img src="/assets/singers/1.jpg" alt="">
+                  <div class="song_avatar_mask">
+                    <button><i class='bx bx-play'></i></button>
+                  </div>
+                </div>
+                <div class="song_body">
+                  <div class="song_body_name">All I Want For Christmas Is You</div>
+                  <div class="song_body_autor"> Maria Carey </div>
+                  <div class="song_body_time">3:54</div>
+                  <div class="song_body_btns">
+                    <button><i class='bx bx-heart'></i></button>
+                    <button><i class='bx bx-list-ul'></i></button>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="song">
+                <span>6</span>
+                <div class="song_avatar">
+                  <img src="/assets/singers/3.jpg" alt="">
+                  <div class="song_avatar_mask">
+                    <button><i class='bx bx-play'></i></button>
+                  </div>
+                </div>
+                <div class="song_body">
+                  <div class="song_body_name">Donda</div>
+                  <div class="song_body_autor">Kanye West</div>
+                  <div class="song_body_time">3:54</div>
+                  <div class="song_body_btns">
+                    <button><i class='bx bx-heart'></i></button>
+                    <button><i class='bx bx-list-ul'></i></button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- ! Recently Played end -->
+
+      </div>
+
+      <!-- ! secondary sidebar -->
+      <div class="aside">
+
+        <!-- ! sidebars top musik -->
+        <div class="aside_top">
+
+          <div class="aside_header">
+            <div class="aside_title">you may like</div>
+            <div class="aside_checkout">
+              <button class="btn btn_check btn_check--active">all</button>
+              <button class="btn btn_check ">new</button>
+            </div>
+          </div>
+
+          <div class="aside_body">
+
+            <div class="aside_item">
+              <span class="aside_item_count">1</span>
+              <div class="aside_item_preview">
+                <img src="/assets/top/lp.jpg" alt="">
+              </div>
+              <div class="aside_item_desc">
+                <p>Given Up</p>
+                <span>Linkin Park</span>
+              </div>
+              <span class="aside_item_time">4:07</span>
+              <button class="like_btn"><i class='bx bx-heart bxs-heart like_btn--active'></i></button>
+              <button class="desc_btn"><i class='bx bx-list-ul'></i></button>
+            </div>
+
+            <div class="aside_item">
+              <span class="aside_item_count">1</span>
+              <div class="aside_item_preview">
+                <img src="/assets/top/beliver.jpg" alt="">
+              </div>
+              <div class="aside_item_desc">
+                <p>Beliver</p>
+                <span>Imagin Dragons</span>
+              </div>
+              <span class="aside_item_time">3:24</span>
+              <button class="like_btn"><i class='bx bx-heart'></i></button>
+              <button class="desc_btn"><i class='bx bx-list-ul'></i></button>
+            </div>
+
+            <div class="aside_item">
+              <span class="aside_item_count">1</span>
+              <div class="aside_item_preview">
+                <img src="/assets/top/pain.jpg" alt="">
+              </div>
+              <div class="aside_item_desc">
+                <p>Shut Your Mouth</p>
+                <span>Pain</span>
+              </div>
+              <span class="aside_item_time">3:13</span>
+              <button class="like_btn"><i class='bx bx-heart'></i></button>
+              <button class="desc_btn"><i class='bx bx-list-ul'></i></button>
+            </div>
+
+            <div class="aside_item">
+              <span class="aside_item_count">1</span>
+              <div class="aside_item_preview">
+                <img src="/assets/top/lp.jpg" alt="">
+              </div>
+              <div class="aside_item_desc">
+                <p>Given Up</p>
+                <span>Linkin Park</span>
+              </div>
+              <span class="aside_item_time">4:07</span>
+              <button class="like_btn"><i class='bx bx-heart'></i></button>
+              <button class="desc_btn"><i class='bx bx-list-ul'></i></button>
+            </div>
+
+            <div class="btn_container btn_container--center">
+              <button class="btn btn--more">read more</button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ! sidebars categories -->
+        <div class="aside_categories">
+          <div class="aside_categories_header">
+            <p>Categories</p>
+            <a href="/categories" class="btn btn--more">See all</a>
+          </div>
+
+          <div class="aside_categories_body">
+
+            <div class="category_item">
+              <img src="/assets/categories/rock.png" alt="">
+              <p>Rock</p>
+            </div>
+
+            <div class="category_item">
+              <img src="/assets/categories/pop.png" alt="">
+              <p>Pop</p>
+            </div>
+
+            <div class="category_item">
+              <img src="/assets/categories/chill.png" alt="">
+              <p>Chill</p>
+            </div>
+
+            <div class="category_item">
+              <img src="/assets/categories/cristmas.png" alt="">
+              <p>Cristmas</p>
+            </div>
+
+            <div class="category_item">
+              <img src="/assets/categories/jazz.png" alt="">
+              <p>Jazz</p>
+            </div>
+
+            <div class="category_item">
+              <img src="/assets/categories/romance.png" alt="">
+              <p>Romance</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ! sidebars categories end -->
+
+
+      </div>
+
+    </main>
+
+    <!-- ! footer -->
+    <div class="footer">
+      <div class="footer_inner">
+
+        <div class="footer_inner_btns">
+          <button class="btn btn--fool">
+            <i class='bx bx-chevrons-left'></i>
+          </button>
+
+          <button class="play_btn">
+            <i class='bx bx-play'></i>
+          </button>
+
+          <button class="btn btn--fool">
+            <i class='bx bx-chevrons-right'></i>
+          </button>
+
+          <button class="btn btn--fool">
+            <i class='bx bx-repeat'></i>
+          </button>
+        </div>
+
+        <div class="footer_inner_audio_desc_audio tablet_a">
+          <p>Given Up</p> - <span>Linkin Park</span>
+        </div>
+
+        <div class="footer_inner_audio">
+          <div class="footer_inner_audio_avatar">
+            <img src="/assets/top/lp.jpg" alt="">
+          </div>
+
+          <div class="footer_inner_audio_desc">
+            <div class="footer_inner_audio_desc_audio">
+              <p>Given Up</p> - <span>Linkin Park</span>
+            </div>
+            <div class="footer_inner_audio_desc_play">
+              <p>2:45</p>
+              <div class="play">
+                <div></div>
+              </div>
+              <p>3:27</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="footer_inner_btns footer_inner_methods">
+
+          <button class="btn btn--fool">
+            <i class='bx bx-list-plus'></i>
+          </button>
+
+          <button class="btn btn--fool">
+            <i class='bx bxs-heart like_btn--active'></i>
+          </button>
+
+          <button class="btn btn--fool">
+            <i class='bx bxs-volume-full'></i>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- ! footer end -->
+  </div>
+
+  <script src="/scripts/app.js"></script>
+</body>
+
+</html>
