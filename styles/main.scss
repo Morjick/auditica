@@ -1,9 +1,9 @@
 $main: #171717;
 $secondary: #272727;
-$lighten: #49504D;
-$contrast: #EE4950;
-$helper: #F3777D;
-$gray: #959D99;
+$lighten: #49504d;
+$contrast: #ee4950;
+$helper: #f3777d;
+$gray: #959d99;
 $white: #fff;
 
 $full: 1900px;
@@ -41,15 +41,21 @@ $mobile: 400px;
     }
   }
 
+  &--container {
+    width: 100%;
+    margin: 20px 50px 20px;
+  }
+
   @media (max-width: $hd) {
     margin: 20px 20px 0;
   }
 }
 
-@import './reset';
-@import './sidebar';
-@import './aside';
-@import './vars';
-@import './footer';
-@import './home';
-@import './login';
+@import "./reset";
+@import "./sidebar";
+@import "./aside";
+@import "./vars";
+@import "./footer";
+@import "./home";
+@import "./login";
+@import "./message";
