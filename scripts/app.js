@@ -1,34 +1,35 @@
-console.log('i am work')
+import { login } from './functions/login.js'
+import { register } from './functions/register.js'
 
-const likeBtns = document.querySelectorAll('.like_btn')
-const descBtns = document.querySelectorAll('.desc_btn')
 const playBtn = document.getElementById('play')
-const loginBtn = document.getElementById('login')
+const footer = document.querySelector('.footer')
+const likeBtns = document.querySelectorAll('.like_btn')
+const loginBtn = document.getElementById('loginBtn')
+const registerBtn = document.getElementById('registerBtn')
 
-likeBtns.forEach(likeBtn => {
-  likeBtn.addEventListener('click', (e) => {
-    // e.target.classList.remove('bx-heart')
-    e.target.classList.toggle('bxs-heart')
-    e.target.classList.toggle('like_btn--active')
-    console.log('click')
-      // < i class='bx bxs-heart' ></i >   
+if (playBtn) {
+  playBtn.addEventListener('click', () => {
+    footer.classList.toggle('footer--active')
   })
-})
+}
 
-descBtns.forEach(descBtn => {
-  descBtn.addEventListener('click', (e) => {
-    console.log('click')
+if (loginBtn) {
+  loginBtn.addEventListener('click', () => {
+    login()
   })
-})
+}
 
-playBtn.onclick = () => {
-  const footer = document.querySelector('.footer')
+if (likeBtns) {
+  likeBtns.forEach(btn => {
+    btn.addEventListener('click', event => {
+      event.target.classList.toggle('bxs-heart')
+      event.target.classList.toggle('like_btn--active')
+    })
+  })
+}
 
-  if(playBtn.innerText === 'Pause') {
-    playBtn.innerText = 'Play'
-  } else if(playBtn.innerText === 'Play') {
-    playBtn.innerText = 'Pause'
-  }
-  
-  footer.classList.toggle('footer--active')
+if(registerBtn) {
+  registerBtn.addEventListener('click', () => {
+    register()
+  })
 }
